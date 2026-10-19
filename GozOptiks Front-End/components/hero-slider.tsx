@@ -69,8 +69,9 @@ export function HeroSlider({ slides }: { slides: HomepageHeroSlide[] }) {
               alt={item.heading}
               fill
               priority={itemIndex === 0}
+              quality={100}
               sizes="100vw"
-              style={{ objectPosition: item.imagePosition }}
+              style={{ objectFit: "cover", objectPosition: item.imagePosition }}
             />
           </div>
         ))}
